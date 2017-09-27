@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68D050D3-438E-4C93-B267-FCB8E1438DAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLSV_VB</RootNamespace>
+    <AssemblyName>QLSV_VB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <StartupObject>QLSV_VB.Program</StartupObject>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QLSV_VB.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crp_IN_DIEMMH.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_IN_DIEMMH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crp_IN_DSSV.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_IN_DSSV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crp_IN_PHIEUDIEM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_IN_PHIEUDIEM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS.vb">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBACKUP.Designer.vb">
+      <DependentUpon>FrmBACKUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBACKUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBACKUP_RESTORE.Designer.vb">
+      <DependentUpon>FrmBACKUP_RESTORE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBACKUP_RESTORE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDIEM.Designer.vb">
+      <DependentUpon>FrmDIEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDIEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLOP.Designer.vb">
+      <DependentUpon>FrmLOP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLOP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDANGNHAP.Designer.vb">
+      <DependentUpon>FrmDANGNHAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDANGNHAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGIANGVIEN.Designer.vb">
+      <DependentUpon>FrmGIANGVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGIANGVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMONHOC.Designer.vb">
+      <DependentUpon>FrmMONHOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMONHOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRp_DIEM_MONHOC.Designer.vb">
+      <DependentUpon>FrmRp_DIEM_MONHOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRp_DIEM_MONHOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRp_DS_SINHVIEN.Designer.vb">
+      <DependentUpon>FrmRp_DS_SINHVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRp_DS_SINHVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRp_PHIEUDIEM.Designer.vb">
+      <DependentUpon>FrmRp_PHIEUDIEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRp_PHIEUDIEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSINHVIEN.Designer.vb">
+      <DependentUpon>FrmSINHVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSINHVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTAO_TAIKHOAN.Designer.vb">
+      <DependentUpon>FrmTAO_TAIKHOAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTAO_TAIKHOAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_ketnoi.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <EmbeddedResource Include="crp_IN_DIEMMH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_IN_DIEMMH.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crp_IN_DSSV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_IN_DSSV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crp_IN_PHIEUDIEM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_IN_PHIEUDIEM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBACKUP.resx">
+      <DependentUpon>FrmBACKUP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBACKUP_RESTORE.resx">
+      <DependentUpon>FrmBACKUP_RESTORE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDIEM.resx">
+      <DependentUpon>FrmDIEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLOP.resx">
+      <DependentUpon>FrmLOP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDANGNHAP.resx">
+      <DependentUpon>FrmDANGNHAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGIANGVIEN.resx">
+      <DependentUpon>FrmGIANGVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMONHOC.resx">
+      <DependentUpon>FrmMONHOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRp_DIEM_MONHOC.resx">
+      <DependentUpon>FrmRp_DIEM_MONHOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRp_DS_SINHVIEN.resx">
+      <DependentUpon>FrmRp_DS_SINHVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRp_PHIEUDIEM.resx">
+      <DependentUpon>FrmRp_PHIEUDIEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSINHVIEN.resx">
+      <DependentUpon>FrmSINHVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTAO_TAIKHOAN.resx">
+      <DependentUpon>FrmTAO_TAIKHOAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault_YodSsVN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-balls-hd-wallpapers-free.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carlosjj-Microsoft-Office-2013-Excel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tasks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carlosjj-Microsoft-Office-2013-Excel1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images_SV\LINH.jpg" />
+    <Content Include="Images_SV\NHAT.jpg" />
+    <Content Include="Images_SV\THƯ.jpg" />
+    <Content Include="Images_SV\TIEN.jpg" />
+    <None Include="Resources\login1.png" />
+    <None Include="Resources\storing.png" />
+    <None Include="Resources\presentation.png" />
+    <None Include="Resources\translator.png" />
+    <None Include="Resources\student.png" />
+    <None Include="Resources\LOG_off.png" />
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

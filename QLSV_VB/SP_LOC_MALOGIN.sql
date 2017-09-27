@@ -1,0 +1,15 @@
+CREATE PROC SP_LOC_MALOGIN
+@ROLE VARCHAR(50)
+AS
+BEGIN
+IF (@ROLE = 'ADMIN')
+	SELECT MAGV as MA,HO + ' ' + TEN as HOTEN FROM 
+	GIANGVIEN  n LEFT JOIN sys.sysusers s
+	ON n.MAGV = s.name
+	WHERE s.name IS NULL
+IF (@ROLE = 'GDV')
+	SELECT MAGV as MA,HO + ' ' + TEN as HOTEN FROM 
+	GIANGVIEN  n LEFT JOIN sys.sysusers s
+	ON n.MAGV = s.name
+	WHERE s.name IS NULL
+END
